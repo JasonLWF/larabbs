@@ -12,7 +12,7 @@ function make_excerpt($value, $length = 200)
 }
 function model_admin_link($title, $model)
 {
-    return model_admin_link($title, $model, 'admin');
+    return model_link($title, $model, 'admin');
 }
 
 function model_link($title, $model, $prefix = '')
@@ -27,7 +27,7 @@ function model_link($title, $model, $prefix = '')
     $url = config('app.url') . $prefix . $model_name . '/' . $model->id;
 
     // 拼接 HTML A 标签，并返回
-    return '<a href="' . $url . ' "target="_blank" ' . $title . '</a>';
+    return '<a href="' . $url . '" target="_blank">' . $title . '</a>';
 }
 
 function model_plural_name($model)
@@ -44,4 +44,5 @@ function model_plural_name($model)
     // 获取子串的复数形式，例如：传参 `user` 会得到 `users`
     return str_plural($snake_case_name);
 }
+
 
