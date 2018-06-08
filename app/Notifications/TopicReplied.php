@@ -68,17 +68,4 @@ class TopicReplied extends Notification
                     ->line('你的话题有新回复')
                     ->action('查看回复', $url);
     }
-
-    /**
-     * Get the array representation of the notification.
-     *
-     * @param  mixed  $notifiable
-     * @return array
-     */
-    public function toArray($notifiable)
-    {
-        return [
-            //
-        ];
-    }
 }
