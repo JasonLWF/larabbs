@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6008648d4b701b26321a0a42fa1abfdd",
+    "content-hash": "b8ff5ccb5346102a182f017d715103cc",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -1891,6 +1891,47 @@
             "time": "2018-06-03T11:33:10+00:00"
         },
         {
+            "name": "overtrue/easy-sms",
+            "version": "1.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/easy-sms.git",
+                "reference": "9c1d04a607c7aabc9f427b6da591d2a1d8b73726"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/overtrue/easy-sms/9c1d04a607c7aabc9f427b6da591d2a1d8b73726.zip",
+                "reference": "9c1d04a607c7aabc9f427b6da591d2a1d8b73726",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.2",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "mockery/mockery": "1.0.x-dev",
+                "phpunit/phpunit": "^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\EasySms\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "i@overtrue.me"
+                }
+            ],
+            "description": "The easiest way to send short message.",
+            "time": "2018-06-07T08:43:03+00:00"
+        },
+        {
             "name": "overtrue/laravel-lang",
             "version": "3.0.8",
             "source": {
@@ -2496,6 +2537,42 @@
                 "shell"
             ],
             "time": "2018-06-10T17:57:20+00:00"
+        },
+        {
+            "name": "qcloudsms/qcloudsms_php",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qcloudsms/qcloudsms_php.git",
+                "reference": "8ee474a6836c015d412eabd1b082bae926f5ee02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/qcloudsms/qcloudsms_php/8ee474a6836c015d412eabd1b082bae926f5ee02.zip",
+                "reference": "8ee474a6836c015d412eabd1b082bae926f5ee02",
+                "shasum": ""
+            },
+            "require-dev": {
+                "sami/sami": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Qcloud\\Sms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "qcloud sms php sdk",
+            "keywords": [
+                "php",
+                "qcloud",
+                "sdk",
+                "sms"
+            ],
+            "time": "2018-02-23T06:31:39+00:00"
         },
         {
             "name": "ramsey/uuid",
